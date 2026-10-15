@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-15",
+  "timezone": "America/Sao_Paulo",
+  "rea_version": "6.5.0",
+  "node_version": "22.23.2",
+  "evidence": {
+    "E01": "ev_6ff183808f1df021e5094f15be704db65cde50c2ca275d74ccd0289ea1daaa47",
+    "E02": "ev_f9dd9b8cd0a3d104e9147314c0de631c57ddb80aee3c64cf512486667a23aac1",
+    "E03": "ev_322bc715eacf686115003c8d03a97a1f4fb8385034fcd0428a45bc58663d1b6c",
+    "E06": "Playwright complementar, sem ID REA"
+  },
+  "routes": [
+    {
+      "route": "/",
+      "status": "Observada",
+      "source": "E01 / E03",
+      "destination": "https://thenewscc.com.br/"
+    },
+    {
+      "route": "/canais",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/canais"
+    },
+    {
+      "route": "/confirmar",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/confirmar"
+    },
+    {
+      "route": "/contact",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/contact"
+    },
+    {
+      "route": "/cupons",
+      "status": "Login",
+      "source": "E03",
+      "destination": "https://auth.thenewscc.com.br/login?origin=https%3A%2F%2Fthenewscc.com.br%2Fcupons"
+    },
+    {
+      "route": "/delivery",
+      "status": "Login",
+      "source": "E03",
+      "destination": "https://auth.thenewscc.com.br/login?origin=https%3A%2F%2Fthenewscc.com.br%2Fdelivery"
+    },
+    {
+      "route": "/evento",
+      "status": "Redireciona",
+      "source": "E03",
+      "destination": "https://thenews.com.br/seis-e-seis"
+    },
+    {
+      "route": "/evento/agenda",
+      "status": "Observada",
+      "source": "E06",
+      "destination": "https://thenewscc.com.br/evento/agenda"
+    },
+    {
+      "route": "/evento/indicar",
+      "status": "Observada",
+      "source": "E06",
+      "destination": "https://thenewscc.com.br/evento/indicar"
+    },
+    {
+      "route": "/evento/patrocinar",
+      "status": "Observada",
+      "source": "E06",
+      "destination": "https://thenewscc.com.br/evento/patrocinar"
+    },
+    {
+      "route": "/form/:formId",
+      "status": "Sem instância",
+      "source": "E02",
+      "destination": null
+    },
+    {
+      "route": "/indicar",
+      "status": "Login",
+      "source": "E03",
+      "destination": "https://auth.thenewscc.com.br/login?origin=https%3A%2F%2Fthenewscc.com.br%2Findicar"
+    },
+    {
+      "route": "/inscrever-minimal",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/inscrever-minimal"
+    },
+    {
+      "route": "/marcas",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/marcas"
+    },
+    {
+      "route": "/policies",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/policies"
+    },
+    {
+      "route": "/quiz/:formId",
+      "status": "Sem instância",
+      "source": "E02",
+      "destination": null
+    },
+    {
+      "route": "/redirect",
+      "status": "Sem parâmetros",
+      "source": "E06",
+      "destination": "https://thenewscc.com.br/redirect"
+    },
+    {
+      "route": "/streak",
+      "status": "Login",
+      "source": "E03",
+      "destination": "https://auth.thenewscc.com.br/login?origin=https%3A%2F%2Fthenewscc.com.br%2Fstreak"
+    },
+    {
+      "route": "/streak/missions",
+      "status": "Login",
+      "source": "E06",
+      "destination": "https://auth.thenewscc.com.br/login?origin=https%3A%2F%2Fthenewscc.com.br%2Fstreak%2Fmissions"
+    },
+    {
+      "route": "/termometro",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/termometro"
+    },
+    {
+      "route": "/terms",
+      "status": "Observada",
+      "source": "E03",
+      "destination": "https://thenewscc.com.br/terms"
+    }
+  ],
+  "findings": [
+    {
+      "topic": "Frontend",
+      "status": "Observado",
+      "finding": "React/ReactDOM 19.1.0, React Router, assinatura Vite e Tailwind 4.1.3.",
+      "source": "E02 / E04"
+    },
+    {
+      "topic": "Variantes",
+      "status": "Observado",
+      "finding": "Regra nominal de 10% para minimal no código; duas apresentações vistas.",
+      "source": "E01 / E02 / E03"
+    },
+    {
+      "topic": "Resultado A/B",
+      "status": "Desconhecido",
+      "finding": "Não há resultado interno para comparar conversão das variantes.",
+      "source": "Limite da coleta"
+    },
+    {
+      "topic": "Cadastro progressivo",
+      "status": "Observado no código",
+      "finding": "Campos adicionais e modo isEnrichment no cliente; não executados contra a API.",
+      "source": "E02"
+    },
+    {
+      "topic": "Retenção",
+      "status": "Inferência",
+      "finding": "Streak, indicação, missões e cupons compõem uma proposta de recorrência.",
+      "source": "E02 / E03 / E05 / E06"
+    },
+    {
+      "topic": "Autenticação",
+      "status": "Observado",
+      "finding": "Cinco rotas do leitor redirecionam ao login, contando missões.",
+      "source": "E03 / E06"
+    },
+    {
+      "topic": "Monetização",
+      "status": "Observado",
+      "finding": "Blocos comerciais na edição, entrada comercial e oferta de patrocínio.",
+      "source": "E03 / E05 / E06"
+    },
+    {
+      "topic": "Receita e audiência",
+      "status": "Desconhecido",
+      "finding": "Declarações públicas de audiência não foram auditadas; não há dados financeiros.",
+      "source": "Limite da coleta"
+    },
+    {
+      "topic": "Entrega de e-mail",
+      "status": "Desconhecido",
+      "finding": "Tela de confirmação e contrato no código não demonstram envio ou recebimento.",
+      "source": "E02 / E03"
+    },
+    {
+      "topic": "Reconstrução",
+      "status": "Entregue localmente",
+      "finding": "Protótipo próprio com jornadas simuladas e 18 verificações aprovadas.",
+      "source": "verificacao-prototipo.json"
+    }
+  ],
+  "static_statistics": {
+    "relevant_files": 1,
+    "nested_asar_containers": 0,
+    "text_bytes_read": 616788,
+    "invalid_utf8_files": 0,
+    "parsed_javascript_files": 1,
+    "visited_ast_nodes": 166537,
+    "findings": 169,
+    "modules": 0,
+    "parse_failures": 0
+  },
+  "limitations": {
+    "E01": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Some network requests had not completed when capture ended; later activity is unknown.",
+      "Browser host platform and architecture were not observed."
+    ],
+    "E02": [
+      "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+      "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+      "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+      "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+      "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+      "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+    ],
+    "E03": [
+      "Artifact identity is unavailable for this observation.",
+      "Event sequence records provider receipt order; simultaneous browser causality is not inferred.",
+      "Network content is retained only when selected; Playwright response-body bytes are API results and are not guaranteed to match wire bytes.",
+      "Request bytes are limited to what Playwright exposes; not_exposed does not establish body absence or multipart file coverage.",
+      "Network content reads settle within 5 seconds each and the observer does not request bodies from unfinished responses.",
+      "Playwright scenario events do not expose request initiator stacks; receipt order does not prove causality.",
+      "Storage values are hashed only after declared-secret redaction.",
+      "Browser host platform and architecture were not observed."
+    ]
+  },
+  "scope": {
+    "declared_routes": 21,
+    "visited_concrete_routes": 19,
+    "prototype_checks": 18
+  }
+}

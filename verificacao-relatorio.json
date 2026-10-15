@@ -1,0 +1,28 @@
+[
+  {
+    "name": "21 rotas no mapa",
+    "passed": true
+  },
+  {
+    "name": "Filtro mostra cinco entradas de login",
+    "passed": true
+  },
+  {
+    "name": "Links locais disponíveis",
+    "passed": true,
+    "missing": []
+  },
+  {
+    "name": "Relatório sem erro JavaScript",
+    "passed": true,
+    "errors": []
+  },
+  {
+    "name": "Desktop sem overflow",
+    "passed": true
+  },
+  {
+    "name": "Mobile sem overflow da página",
+    "passed": true
+  }
+]

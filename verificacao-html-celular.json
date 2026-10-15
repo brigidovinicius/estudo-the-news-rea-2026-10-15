@@ -1,0 +1,62 @@
+{
+  "results": [
+    {
+      "name": "Resumo legível em 390px",
+      "passed": true
+    },
+    {
+      "name": "Relatório sem overflow horizontal",
+      "passed": true
+    },
+    {
+      "name": "Telas sem overflow horizontal",
+      "passed": true
+    },
+    {
+      "name": "Evidências sem overflow horizontal",
+      "passed": true
+    },
+    {
+      "name": "Filtro de rotas preservado",
+      "passed": true
+    },
+    {
+      "name": "Capturas ampliam dentro do HTML",
+      "passed": true
+    },
+    {
+      "name": "Protótipo incorporado funciona",
+      "passed": true
+    },
+    {
+      "name": "Cadastro opcional funciona no iframe",
+      "passed": true
+    },
+    {
+      "name": "Ritual funciona dentro do arquivo",
+      "passed": true
+    },
+    {
+      "name": "Protótipo amplia em tela cheia",
+      "passed": true
+    },
+    {
+      "name": "Sem requisições HTTP externas",
+      "passed": true
+    },
+    {
+      "name": "Sem erro JavaScript",
+      "passed": true
+    },
+    {
+      "name": "Versão completa incorpora pacote ZIP",
+      "passed": true
+    },
+    {
+      "name": "Versão completa sem overflow",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "external": []
+}

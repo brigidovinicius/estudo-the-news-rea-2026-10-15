@@ -1,0 +1,79 @@
+{
+  "date": "2026-10-15",
+  "results": [
+    {
+      "name": "Desktop sem rolagem horizontal",
+      "status": "passed"
+    },
+    {
+      "name": "E-mail inválido não abre cadastro",
+      "status": "passed"
+    },
+    {
+      "name": "E-mail válido abre demonstração",
+      "status": "passed"
+    },
+    {
+      "name": "Preferências opcionais persistidas",
+      "status": "passed"
+    },
+    {
+      "name": "Endereço de e-mail não armazenado",
+      "status": "passed"
+    },
+    {
+      "name": "Leitura diária registrada e botão desabilitado",
+      "status": "passed"
+    },
+    {
+      "name": "Sem duplicar leitura após reload",
+      "status": "passed"
+    },
+    {
+      "name": "Busca sem acento encontra tema com acento",
+      "status": "passed"
+    },
+    {
+      "name": "Busca vazia tem orientação",
+      "status": "passed"
+    },
+    {
+      "name": "Edição e patrocinador demonstrativos navegáveis",
+      "status": "passed"
+    },
+    {
+      "name": "Formulário comercial confirma apenas simulação",
+      "status": "passed"
+    },
+    {
+      "name": "FAQ abre por interação",
+      "status": "passed"
+    },
+    {
+      "name": "Dados locais podem ser apagados",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile 390px sem rolagem horizontal",
+      "status": "passed"
+    },
+    {
+      "name": "Mobile permite completar perfil depois",
+      "status": "passed"
+    },
+    {
+      "name": "Ritual mobile sem rolagem horizontal",
+      "status": "passed"
+    },
+    {
+      "name": "Nenhum erro JavaScript",
+      "status": "passed"
+    },
+    {
+      "name": "Nenhuma requisição HTTP externa",
+      "status": "passed"
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}
